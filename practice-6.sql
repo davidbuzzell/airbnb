@@ -18,4 +18,4 @@
 SELECT listings.neighborhood, COUNT(*)
 FROM reviews
 INNER JOIN listings on listings.id = reviews.listing_id
-GROUP BY neighborhood;
+GROUP BY listings.neighborhood;
